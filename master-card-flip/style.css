@@ -8,7 +8,7 @@
     --bg-clr: #181a2d;
     --circle-radius: 50%;
     --card-vadius: 24px;
-    --gradient-clr: linear-gradient(to right, #11eedf92 40%, #f8f8f7);
+    --gradient-clr: linear-gradient(-90deg, #11eedf92 40%, #f8f8f7);
 }
 
 /* 230*370 */
@@ -53,8 +53,8 @@ section::after {
 }
 
 .card {
-    width: 370px;
-    height: 230px;
+    width: calc(170px *5/3);
+    height: 170px;
     transform-style: preserve-3d;
     transition: transform .7s;
     position: relative;
@@ -72,7 +72,7 @@ section::after {
     backface-visibility: hidden;
     background-color: rgba(228, 223, 223, 0.178);
     border-radius: var(--card-vadius);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     padding: 20px;
     position: absolute;
 }
@@ -92,12 +92,54 @@ header {
     align-items: center;
 }
 
-p {
+header p {
     display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+
 }
 
-header .logo {
+header span {
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.front-card-information {
+    margin-top: 35px;
+}
+
+.front-card-information .card-number {
+    font-size: 8px;
+    margin-bottom: 8px;
+}
+
+.front-card-information .number {
+    font-size: 12px;
+}
+
+.user-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 3px;
+}
+
+.user-information .name {
+    font-size: 12px;
+}
+
+.user-information .date {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.user-information .date .name {
+    font-size: 8px;
+    margin-bottom: 3px;
+}
+
+.user-information .date .day-year {
+    font-size: 14px;
 }
