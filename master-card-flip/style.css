@@ -53,8 +53,8 @@ section::after {
 }
 
 .card {
-    width: calc(170px *5/3);
-    height: 170px;
+    width: calc(180px *5/3);
+    height: 180px;
     transform-style: preserve-3d;
     transition: transform .7s;
     position: relative;
@@ -149,7 +149,7 @@ header span {
     font-size: 14px;
 }
 
-.back header .title {
+.back .title {
     font-size: 7px;
     display: flex;
     justify-content: center;
@@ -172,4 +172,23 @@ header span {
     background-color: #000000;
     left: 0;
     top: 27px;
+}
+
+.back .cvv {
+    margin-left: 220px;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    padding: 3px 5px;
+    color: black;
+    border-radius: 5px;
+    font-size: 12px;
+    top: 70px;
+}
+
+.back h5 {
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 90px;
+    text-align: center;
 }
