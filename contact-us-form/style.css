@@ -11,7 +11,7 @@
     --bg-clr: #b5f9ed;
     --main-clr: #4e00ea;
     --white-clr: #fff;
-    --radius: 7px;
+    --radius: 5px;
 }
 
 body {
@@ -69,11 +69,12 @@ body {
 
 .container .icons-said .icon h4 {
     text-transform: capitalize;
+    font-weight: 500;
 }
 
 .container .icons-said .icon p {
     font-size: 13px;
-    color: #939393;
+    color: #afafaf;
     text-transform: capitalize;
 }
 
@@ -84,4 +85,53 @@ body {
 .message-said {
     width: 70%;
     height: 100%;
+    padding-left: 50px;
+}
+
+.container .message-said h2 {
+    font-weight: 600;
+    color: var(--main-clr);
+    font-size: 22px;
+}
+
+.container .message-said p {
+    font-size: 14px;
+    color: #6c6c6c;
+    line-height: 1.6;
+}
+
+.container .message-said form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.container .message-said form input {
+    border: none;
+    background-color: #e2dbe7;
+    padding: 10px;
+    border-radius: var(--radius);
+}
+
+.container .message-said form>input:nth-child(3) {
+    padding-bottom: 70px;
+}
+
+.container .message-said form button {
+    width: 100px;
+    border: none;
+    background-color: var(--main-clr);
+    color: white;
+    padding: 10px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 15px;
+    transition: background-color .4s;
+}
+
+.container .message-said form button:hover {
+    background-color: #440db1;
+    cursor: pointer;
 }
