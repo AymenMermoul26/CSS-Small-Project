@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+:root {
+    --bg-clr: #b5f9ed;
+    --main-clr: #4e00ea;
+    --white-clr: #fff;
+    --radius: 7px;
+}
+
+body {
+
+    height: 100vh;
+    background-color: var(--bg-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 65%;
+    padding: 40px;
+    height: 65%;
+    background-color: var(--white-clr);
+    border-radius: var(--radius);
+    box-shadow: 0 0 5px 0 #9c9c9c;
+    display: flex;
+    flex-direction: row;
+}
+
+.icons-said {
+    width: 30%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+}
+
+.icons-said::after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 70%;
+    background-color: rgb(122, 122, 122);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container .icons-said .icon i {
+    font-size: 25px;
+    color: var(--main-clr);
+    margin-bottom: 10px;
+}
+
+.container .icons-said .icon h4 {
+    text-transform: capitalize;
+}
+
+.container .icons-said .icon p {
+    font-size: 13px;
+    color: #939393;
+    text-transform: capitalize;
+}
+
+.container .icons-said .address p {
+    width: 150px;
+}
+
+.message-said {
+    width: 70%;
+    height: 100%;
+}
