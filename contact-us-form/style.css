@@ -127,7 +127,6 @@ body {
     padding: 10px;
     border-radius: var(--radius);
     font-weight: 600;
-    font-size: 15px;
     transition: background-color .4s;
 }
 
