@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    position: relative;
+    position: absolute;
     height: 100%;
     top: 0;
     left: 0;
@@ -58,12 +58,16 @@ body {
     cursor: pointer;
 }
 
+.container button:hover {
+    opacity: 0.6;
+}
+
 .container .hamburger-menu {
     position: fixed;
     top: 10px;
     left: 10px;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     background-color: #131313;
     color: var(--main-clr);
     border-radius: 50%;
@@ -72,6 +76,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 10;
 }
 
 .container .hamburger-menu div {
@@ -83,4 +88,31 @@ body {
 
 .container .hamburger-menu div:nth-child(2) {
     margin: 7px 0;
+}
+
+.main-container {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.853);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .links a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
